@@ -1,0 +1,49 @@
+{
+  "case_id": "138",
+  "checkpoint_epoch": 231,
+  "capture_source": "Previously completed real unified checkpoint inference; reused without running the model again",
+  "raw_output_arrays": {
+    "decoder_displacement_ed.pt": "torch.float32 [1,22043,3]; ED capped decoder output before template addition",
+    "decoder_displacement_es.pt": "torch.float32 [1,22043,3]; ES capped decoder output before template addition"
+  },
+  "phase_order": [
+    "ED",
+    "ES"
+  ],
+  "raw_values_preserved_exactly": true,
+  "runtime_model_inference": false,
+  "input_sha256": {
+    "decoder_displacement_ed.pt": "3d67f3f56fd6ab6cf149b2bf06d32320025a966ad08f25d5628938a58921428c",
+    "decoder_displacement_es.pt": "1019908b76b0512bf23012e7c028a9f1aba6a5b4c60bff1425cd4e4786c877b0",
+    "world_transform.npz": "f3ddd31170fcf5f11676a13b8c3e10bc3d06acb719e2404d1e73361eb8a2dcdf",
+    "LV_ED_mean.vtk": "73fd6c5a0c93fd5febf41760f3c99378aa5b883a630e15b3c466ddbde51d398a"
+  },
+  "capture_note": "Converted the previously captured decoder displacement to separate native Tensor files; batch dimension retained and values checked bitwise equal. No model invocation.",
+  "template_source": "Original Statistical-Shape-Model/LV_ED_mean.vtk copied without modification",
+  "template_normalization": {
+    "method": "Similarity transform recovered by SVD from original VTK to the matching float32 normalized model asset",
+    "reference_asset": "LV_Epi_CrossSDF_MeshPrior_MnM2_v11_5static/assets/LV_ED_mean_v5_endpoint_normalized.npz",
+    "max_abs_residual_normalized": 5.960464477539063e-08,
+    "vertex_order_preserved": true,
+    "not_fit_to_case138": true,
+    "parameters_location": "01_model_output.py constants"
+  },
+  "output_cleanup": {
+    "removed_files": [
+      "es_endo.obj",
+      "es_deformed_graph.pt",
+      "heart_ed.png",
+      "es_epi.obj",
+      "ed_endo.obj",
+      "template_graph.pt",
+      "ed_epi.obj",
+      "es_world_graph.pt",
+      "es_shell.obj",
+      "heart_es.png",
+      "ed_deformed_graph.pt",
+      "ed_world_graph.pt",
+      "ed_shell.obj"
+    ],
+    "scope": "Only this example outputs directory"
+  }
+}

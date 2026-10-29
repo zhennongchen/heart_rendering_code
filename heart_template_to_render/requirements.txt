@@ -1,0 +1,4 @@
+numpy
+torch>=2.0
+pyvista==0.47.3
+vtk==9.6.1

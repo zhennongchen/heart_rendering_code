@@ -1,0 +1,61 @@
+{
+  "case_id": "138",
+  "checkpoint_epoch": 231,
+  "template_input": "data/LV_ED_mean.vtk",
+  "runtime_model_inference": false,
+  "displacement_shape_per_phase": [
+    1,
+    22043,
+    3
+  ],
+  "graph_tensor_shapes": {
+    "pos": [
+      22043,
+      3
+    ],
+    "faces": [
+      43840,
+      3
+    ],
+    "edge_index": [
+      2,
+      131762
+    ],
+    "face_surface": [
+      43840
+    ],
+    "vertex_surface": [
+      22043
+    ]
+  },
+  "phases": {
+    "ed": {
+      "tensor_addition_exact": true,
+      "topology_unchanged": true,
+      "world_max_abs_error_vs_historical_mm": 1.52587890625e-05,
+      "obj_max_abs_rounding_error": 0.0,
+      "render_size": [
+        1200,
+        1200
+      ],
+      "render_verified": true
+    },
+    "es": {
+      "tensor_addition_exact": true,
+      "topology_unchanged": true,
+      "world_max_abs_error_vs_historical_mm": 1.52587890625e-05,
+      "obj_max_abs_rounding_error": 0.0,
+      "render_size": [
+        1200,
+        1200
+      ],
+      "render_verified": true
+    }
+  },
+  "template_max_abs_error_vs_model_asset": 5.960464477539063e-08,
+  "vertex_order_and_face_indices_preserved": true,
+  "original_vtk_copy_sha256": "73fd6c5a0c93fd5febf41760f3c99378aa5b883a630e15b3c466ddbde51d398a",
+  "outputs_cleared_before_rerun": true,
+  "obj_writer": "pyvista.PolyData.save (VTK OBJ writer)",
+  "all_six_obj_roundtrips_verified": true
+}
